@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(211, 211, 211);
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40rem;
+    width: 40rem;
+    background-color: #fff;
+    background-image: url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-size: 88%;
+}
+
+.clock:after {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color:#000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    content: "";
+}
+
+.digital {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hours, .minutes, .seconds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.hours .h {
+    width: 1.5rem;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 48.50%;
+    transform-origin: 50% 100%;
+    background-color: rgb(22, 22, 22);
+}
+
+.minutes .m {
+    width: 0.8rem;
+    height: 38%;
+    position: absolute;
+    top: 12%;
+    left: 49.3%;
+    transform-origin: 50% 100%;
+    background-color: rgb(61, 42, 42);
+
+}
+
+.seconds .s {
+    width: 0.5rem;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 49.5%;
+    transform-origin: 50% 80%;
+    background-color: rgb(168, 45, 45);
+    z-index: -1;
+}
+
+.transition {
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);;
+}
