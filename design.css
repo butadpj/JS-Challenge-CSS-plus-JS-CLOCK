@@ -15,7 +15,7 @@ body {
     height: 40rem;
     width: 40rem;
     background-color: #fff;
-    background-image: url(https://cssanimation.rocks/images/posts/clocks/ios_clock.svg);
+    background-image: url(ios_clock.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
