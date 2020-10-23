@@ -60,7 +60,7 @@ body {
     height: 25%;
     position: absolute;
     top: 25%;
-    left: 48.50%;
+    left: 48.24%;
     transform-origin: 50% 100%;
     background-color: rgb(22, 22, 22);
 }
@@ -89,4 +89,65 @@ body {
 
 .transition {
     transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .clock {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .hours .h {
+        left: 48%;
+        width: 0.9rem;
+    }
+
+    .minutes .m {
+        width: 0.7rem;
+        left: 48.5%;
+    }
+
+    .digital {
+        top: 15%;
+        font-size: 1.7rem;
+    }
+
+    .seconds .s{
+        width: 0.4rem;
+        left: 49%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .clock {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .hours .h {
+        left: 47.6%;
+        width: 0.8rem;
+    }
+
+    .minutes .m {
+        width: 0.6rem;
+        left: 48.4%;
+    }
+
+    .digital {
+        top: 15%;
+        font-size: 1.7rem;
+    }
+
+    .seconds .s{
+        width: 0.3rem;
+        left: 49%;
+    }
+
+    .digital {
+        top: 18%;
+        font-size: 1.5rem;
+    }
 }
